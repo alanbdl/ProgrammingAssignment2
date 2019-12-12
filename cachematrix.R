@@ -9,12 +9,13 @@ makeCacheMatrix <- function(x = matrix()) {
 	set <- function(y) {
 		x <<- y
 		m <<- NULL
-}
+	}
 	get <- function() x
 	SetInverse <- function(inverse)m <<- inverse
 	GetInverse <- function() m
 	list(set = set, get = get, SetInverse = SetInverse, 
 	GetInverse = GetInverse)
+}
 
 ## This function computes the inverse of the special "matrix" returned by 
 ## makeCacheMatrix above
